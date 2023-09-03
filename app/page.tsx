@@ -57,7 +57,7 @@ export default function Home() {
             imagination, reach the peaks of excitement in our app.
           </p>
           <Link href={'/luckydraw'}>
-            <button className="py-[4px] font-semibold  border-2 border-btngreen bg-btngreen text-white mt-10 w-[300px] rounded-2xl text-xl ">
+            <button className="animate-pulse py-[4px] font-semibold  border-2 border-btngreen bg-btngreen text-white mt-10 w-[300px] rounded-2xl text-xl ">
               Lucky Draw
             </button>
           </Link>
@@ -65,7 +65,16 @@ export default function Home() {
       </section>
       <footer className="bg-homebg h-auto  py-20">
         <div className="flex items-center flex-col justify-center space-y-4">
-          <p className=" text-white">© 2023 @tanselberkant</p>
+          <div className=" text-white flex justify-center items-center gap-4">
+            <div>© 2023 </div>
+            <a
+              target="_blank"
+              className="hover:text-btngreen -mt-[2px] "
+              href="https://tanselberkant.dev/"
+            >
+              @tanselberkant
+            </a>{' '}
+          </div>
           <a
             href="https://www.buymeacoffee.com/tanselberkant"
             className="w-[300px] h-20"
