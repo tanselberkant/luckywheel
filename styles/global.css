@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner--text--purple {
+  text-shadow: 10px 4px 10px #a17ca1;
+}
+
+.banner--text--green {
+  text-shadow: 10px 4px 10px #5d747a;
+}
+
+body {
+  background-color: rgb(18 18 18);
+}
