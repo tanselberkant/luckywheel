@@ -33,11 +33,11 @@ export default function Home() {
           </div>
 
           <div className="w-full h-full flex flex-col justify-center items-center align-middle relative z-20 px-1 ">
-            <h1 className="text-5xl md:text-8xl xl:text-9xl uppercase text-bannertext banner--text--purple">
+            <h1 className="text-5xl md:text-8xl xl:text-9xl uppercase text-white banner--text--purple">
               Lucky Wheel
             </h1>
             <Link href={'/luckydraw'}>
-              <button className="py-[4px] border-2 border-btngreen bg-btngreen text-white mt-10 w-[300px] rounded-2xl text-xl ">
+              <button className="animate-pulse py-[4px] font-semibold border-2 border-btngreen bg-btngreen text-white mt-10 w-[300px] rounded-2xl text-xl ">
                 Lucky Draw
               </button>
             </Link>
@@ -47,17 +47,17 @@ export default function Home() {
       <section className="bg-homebg md:h-screen relative  -mt-64 md:-mt-40 xl:mt-0 ">
         <div className="absolute right-0 top-28 border-2 border-btngreen rounded-full h-[470px] w-[300px] -rotate-[134deg] z-10 shadow-2xl" />
         <div className="w-full h-full flex flex-col justify-center items-center align-middle relative z-20 px-2">
-          <h1 className="text-5xl md:text-8xl xl:text-9xl uppercase text-bannertext banner--text--purple">
+          <h1 className="text-5xl md:text-8xl xl:text-9xl uppercase text-white banner--text--purple">
             Ready, Spin!
           </h1>
-          <p className="text-bannertext text-4xl px-10 md:px-20 xl:px-52 text-center mt-10">
+          <p className="text-white text-4xl px-10 md:px-20 xl:px-52 text-center mt-10 banner--text--purple ">
             Share your indomitable spirit with us. Add the names to the list and
             await the result with anticipation. Whether a reward or a penalty
             for the drawn name; the choice is yours. With your boundless
             imagination, reach the peaks of excitement in our app.
           </p>
           <Link href={'/luckydraw'}>
-            <button className="py-[4px] border-2 border-btngreen bg-btngreen text-white mt-10 w-[300px] rounded-2xl text-xl ">
+            <button className="py-[4px] font-semibold  border-2 border-btngreen bg-btngreen text-white mt-10 w-[300px] rounded-2xl text-xl ">
               Lucky Draw
             </button>
           </Link>

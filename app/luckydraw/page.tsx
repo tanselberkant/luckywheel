@@ -23,13 +23,13 @@ const Page = () => {
       <div className="h-screen py-20 px-2  ">
         <div className="grid grid-cols-12 gap-4 items-center h-full ">
           <div className="col-span-12 lg:col-span-5">
-            <div className="flex justify-center ">
+            <div className="flex justify-center items-center gap-2">
               <form
                 onSubmit={handleAddName}
                 className="flex w-[300px]  md:w-[400px] relative"
               >
                 <input
-                  className="border-2 py-2 border-btngreen w-full pl-2 rounded-xl"
+                  className="border-2 py-2 border-btnpurple w-full pl-2 rounded-xl outline-btnpurple "
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -42,24 +42,22 @@ const Page = () => {
                   Add
                 </button>
               </form>
-            </div>
-            <h1 className="text-center text-white text-5xl mt-10">Settings</h1>
-            <div className="flex justify-center w-full">
               <button
                 onClick={() => {
                   setNames([]);
                 }}
-                className="py-[4px] border-2 border-btngreen bg-btngreen text-white mt-2 px-10 rounded-2xl text-xl "
+                className="py-[8px] border-2 border-btngreen bg-btngreen text-white  px-4 rounded-xl  "
               >
-                Reset Names
+                Reset
               </button>
             </div>
+
             <h1 className="text-center text-white text-5xl mt-10 mb-2">
               Competitors
             </h1>
             {names.map((name, index) => (
               <p className="text-xl text-white text-center" key={index}>
-                -{name}
+                - {name}
               </p>
             ))}
           </div>
